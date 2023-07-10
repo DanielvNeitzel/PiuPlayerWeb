@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title></title>
+
+	<link href="estilo-player.css" rel="stylesheet">
+	<link href="jquery-ui.css" rel="stylesheet">
+	<script src="jquery-1.12.4.js"></script>
+	<script src="jquery-ui.js"></script>
+	<script src="script-player.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="btn-voltar">
+			<a href="../inicio.php">⋖ Voltar</a>
+		</div>
+		<div class="column add-bottom">
+			<div id="mainwrap">
+				<div id="nowPlay">
+					<span class="left" id="npAction">Pausado</span>
+					<span class="right" id="npTitle"></span>
+				</div>
+				<div id="audiowrap">
+					<div id="audio0">
+						<audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
+					</div>
+					<div id="tracks">
+						<a id="btnPrev">&laquo; Anterior</a>
+						<a id="btnNext">Proxima &raquo;</a>
+					</div>
+				</div>
+				<div onclick="$('#lista-Ab').slideToggle();" class="btn-version">PRIME 2</div>
+				<div id="lista-Ab" class="lista-album">
+					<div id="plwrap">
+						<ul id="plList"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
